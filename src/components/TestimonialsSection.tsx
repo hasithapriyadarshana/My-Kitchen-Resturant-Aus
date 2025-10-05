@@ -1,6 +1,8 @@
 import { Card, CardContent } from './ui/card';
 import { Star, Quote } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { createTailwindMerge } from 'tailwind-merge';
+
 
 export function TestimonialsSection() {
   const testimonials = [
@@ -31,6 +33,7 @@ export function TestimonialsSection() {
   ];
 
   return (
+    <>
     <section className="py-20 bg-[#2a2a2a]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -115,5 +118,6 @@ export function TestimonialsSection() {
         </div>
       </div>
     </section>
+    </>
   );
 }
